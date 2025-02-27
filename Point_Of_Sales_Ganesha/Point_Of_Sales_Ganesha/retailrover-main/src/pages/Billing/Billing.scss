@@ -1,0 +1,129 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+  border: none;
+
+  .Title {
+    width: 100%;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: #4caf50;
+      font-size: 16px;
+      font-weight: 500;
+      border: 1px solid #4caf50;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: #4caf50;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: #ff9800;
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: #f44336;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton,
+    .deleteButton {
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .viewButton {
+      color: #2196f3;
+      background-color: #e3f2fd;
+    }
+
+    .deleteButton {
+      color: #f44336;
+      background-color: #ffebee;
+    }
+  }
+}
+
+/* Additional styles for billingForm */
+.billingForm {
+  
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.billingFormTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.datagrid {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.inputFieldsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border-radius: 40px;
+}
+
+.inputField,
+.emailInput {
+  width: 100%;
+}
+
+.totalPriceContainer {
+  margin-top: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.confirmTransactionButtonContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.confirmTransactionButtonContainer button {
+  width: 300px;
+}
